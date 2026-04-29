@@ -1,0 +1,28 @@
+name: video_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+
+  # 核心视频工具
+  - ffmpeg
+  - x264
+  - x265
+  - libvpx
+
+  # 数值与基础库
+  - numpy
+  - scipy
+  - tqdm
+
+  # 图像处理（conda版更稳定）
+  - opencv
+
+  # pip 区
+  - pip
+  - pip:
+      - moviepy
+      - imageio
+      - imageio-ffmpeg
+      - decord
+      - av
